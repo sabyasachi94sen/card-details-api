@@ -18,4 +18,4 @@ app.post("/checkapi",(req,res)=>{
     res.send("Data Fetched Successfully");
 })
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
