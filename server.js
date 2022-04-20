@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 })
 
 app.post("/checkapi",(req,res)=>{
-    res.send("Data Fetched Successfully");
+    res.send(req.query);
 })
 
 app.listen(process.env.PORT || 4000);
